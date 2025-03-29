@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
@@ -11,7 +11,7 @@ def login():
 
 @app.route('/ScrapeAI')
 def hello():
-    return 'This is the Infinity ScrapeAI app page'
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run()
