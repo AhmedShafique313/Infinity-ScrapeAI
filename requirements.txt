@@ -2,3 +2,4 @@ firecrawl-py
 python-dotenv
 django
 sanic
+sanic-ext
