@@ -1,3 +1,4 @@
 scrapeai/
 .env
 __pycache__/
+djangoapp/
