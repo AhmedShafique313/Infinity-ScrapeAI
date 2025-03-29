@@ -13,3 +13,5 @@ Infinity ScrapeAI is an AI-powered website scraper that extracts structured data
 🚀 Turn any website into structured data with Infinity ScrapeAI!
 
 ### 💲In future we'll offer pricing because Infinity ScrapeAI is in development process. Stay Tuned🌟
+
+This will be in web application because of Python's desktop application frameworks are not powerful than others like .NET, C# etc. 
