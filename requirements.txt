@@ -3,3 +3,4 @@ python-dotenv
 django
 sanic
 sanic-ext
+Flask
