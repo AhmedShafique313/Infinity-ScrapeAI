@@ -1,2 +1,3 @@
 scrapeai/
 .env
+__pycache__/
