@@ -1,6 +1,6 @@
 import json
 from firecrawl import FirecrawlApp
-from loading_env import firecrawl_api_key
+from env_load import firecrawl_api_key
 
 def scrapping_function(website_url):
     app = FirecrawlApp(api_key=firecrawl_api_key)
