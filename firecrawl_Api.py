@@ -1,4 +1,4 @@
-import json, time
+import json
 from firecrawl import FirecrawlApp
 from env_load import firecrawl_api_key
 
@@ -14,6 +14,10 @@ def scrapping_function(website_url):
     ]
     scraped_data = {}
     for page in specific_pages:
-        scrape_result = app.scrape_url(page, params={'formats': ['markdown']})
-        scraped_data[page] = scrape_result.get('markdown', 'No content available')
+        try:
+            scrape_result = app.scrape_url(page)  # Removed params argument
+            scraped_data[page] = scrape_result.get('markdown', 'No content available')
+        except Exception as e:
+            scraped_data[page] = f"Error occurred: {str(e)}"  # Handle errors gracefully
+    
     return scraped_data
